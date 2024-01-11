@@ -13,8 +13,6 @@
     Telegram.WebApp.onEvent('themeChanged', setThemeClass);
     setThemeClass();
     
-    Telegram.WebApp.MainButton.isVisible = true;
-    Telegram.WebApp.MainButton.show();
     </script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -35,5 +33,9 @@
         <div class="service">03</div>
         <div class="service">03</div>
     </div>
+    <script>
+        Telegram.WebApp.MainButton.isVisible = true;
+        Telegram.WebApp.MainButton.show();
+    </script>
 </body>
 </html>
