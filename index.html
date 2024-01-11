@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script>
+    function setThemeClass() {
+      document.documentElement.className = Telegram.WebApp.colorScheme;
+    }
+    Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+    setThemeClass();
+  
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+</head>
+<body>
+    <header class="header"></header>
+    <div class="services-rows">
+        <div class="service">01</div>
+        <div class="service">02</div>
+        <div class="service">03</div>
+        <div class="service">03</div>
+        <div class="service">03</div>
+        <div class="service">03</div>
+        <div class="service">03</div>
+        <div class="service">03</div>
+        <div class="service">03</div>
+        <div class="service">03</div>
+        <div class="service">03</div>
+        <div class="service">03</div>
+    </div>
+</body>
+</html>
