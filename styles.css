@@ -34,3 +34,11 @@ body {
 .avatar{
     border-radius: 50%;
 }
+
+.contestantّFirstName{
+    color: var(--tg-theme-text-color);
+}
+
+.subtitleText{
+    color: var(--tg-theme-subtitle-text-color);
+}
