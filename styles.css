@@ -12,7 +12,9 @@ header {
     height: 2.5rem;
     width: 100%;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+ 
 }
+/*
 .services-rows{
     display: grid;
     gap: 1rem;
@@ -28,4 +30,16 @@ header {
     padding-bottom: 1rem;
     padding-left: 1rem;
     border-radius: 0.5rem;
+} */
+
+.contestant-1{
+    background-color: var(--tg-theme-bg-color);
+    width: 50%;
+    height: 10%;
+}
+
+.contestant-2{
+    background-color: var(--tg-theme-bg-color);
+    width: 50%;
+    height: 10%;
 }
