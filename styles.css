@@ -37,7 +37,7 @@ header {
     gap: 1rem;
     padding: 0.5rem;
     grid-template-columns:repeat(2, minmax(0,50%));
-    place-content: center;
+    padding-top: 50%;
 }
 
 .contestant-one{
