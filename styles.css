@@ -41,4 +41,5 @@ body {
 
 .subtitleText{
     color: var(--tg-theme-subtitle-text-color);
+    font-size: 0.5rem;
 }
