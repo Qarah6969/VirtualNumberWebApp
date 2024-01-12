@@ -17,14 +17,26 @@
 <body>
     <div class="contestants">
 
-        <div class="contestant-one">
-            1
+        <div class="contestantOne">
+            <div class="avatarOne">
+                <img id="avatarImageOne">
+            </div>
         </div>
 
-        <div class="contestant-two">
-            2
+        <div class="contestantTwo">
+            <div class="avatarTwo">
+                <img id="avatarImageTwo">
+            </div>
         </div>
 
     </div>
+
+    <script>
+        var contestantOneAvatarElement = document.getElementById("avatarImageOne")
+        contestantOneAvatarElement.src = window.Telegram.initDataUnsafe.user.photo_url
+
+        var contestantTwoAvatarElement = document.getElementById("avatarImageTwo")
+        contestantTwoAvatarElement.src = window.Telegram.initDataUnsafe.user.photo_url
+    </script>
 </body>
 </html>

@@ -18,8 +18,8 @@ body {
     padding: 1rem;
 }
 
-.contestant-one,
-.contestant-two {
+.contestantOne,
+.contestantTwo {
     background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
     flex: 1;
