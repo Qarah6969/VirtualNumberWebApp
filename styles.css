@@ -37,21 +37,17 @@ header {
     gap: 1rem;
     padding: 0.5rem;
     grid-template-columns:repeat(2, minmax(0,50%));
-    justify-content: center;
+    place-content: center;
 }
 
 .contestant-one{
     background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
-    width: 50%;
-    height: 10%;
     text-align: center;
 }
 
 .contestant-two{
     background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
-    width: 50%;
-    height: 10%;
     text-align: center;
 }
