@@ -17,12 +17,11 @@ body{
 
 
 .categoryContainer {
-    display: flex;
-    flex-direction: row;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
     border: 1px solid #ddd;
     padding: 20px;
-    justify-content: space-between;
-    align-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
     transition: background-color 0.3s;
@@ -33,8 +32,18 @@ body{
 }
 
 .categoryPic{
-    flex-basis: 25%;
-    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.categoryContainer:hover .categoryPic {
+    opacity: 0.5;
 }
 
 .categoryName{
@@ -43,11 +52,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: 75%;
     font-size: large;
 }
 
 .headTitle{
     text-align: center;
-        
+
 }
