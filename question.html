@@ -6,6 +6,17 @@
   <title>Question</title>
   <link rel="stylesheet" href="questionPageStyles.css">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script>
+    function setThemeClass() {
+      document.documentElement.className = Telegram.WebApp.colorScheme;
+    }
+    Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+    setThemeClass();
+    window.Telegram.WebApp.ready();
+    window.Telegram.WebApp.MainButton.hide();
+    window.Telegram.WebApp.expand()
+    
+</script>
 </head>
 <body>
     <div id="questionPageContainer">
@@ -22,5 +33,11 @@
       <div class="answer">Row 2, Column 2</div>
   </div>
 </div>
+<script>
+        function changeToLastWebPage(){
+            window.location.href = "./index.html"
+        }
+        window.Telegram.WebApp.BackButton.onClick(changeToLastWebPage)
+</script>
 </body>
 </html>

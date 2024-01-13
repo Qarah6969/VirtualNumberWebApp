@@ -13,6 +13,7 @@
         setThemeClass();
         window.Telegram.WebApp.ready();
         window.Telegram.WebApp.MainButton.show();
+        window.Telegram.WebApp.BackButton.hide();
         
     </script>
     <link rel="stylesheet" href="mainPageStyles.css">
@@ -46,10 +47,8 @@
 
     </div>
     <script>
-
-
-        function changeWebPage(){
-            window.location.href = "./question.html"
+        function changeToNextWebPage(){
+            window.location.href = "./categories.html"
         }
         // var contestantOneAvatarElement = document.getElementById("avatarImageOne")
         // contestantOneAvatarElement.src = window.Telegram.WebApp.initDataUnsafe.user.photo_url
@@ -62,7 +61,7 @@
         contestantOneFirstNameElement.innerText = window.Telegram.WebApp.initDataUnsafe.user.first_name
         // contestantTwoFirstNameElement.innerText = window.Telegram.WebApp.initDataUnsafe.receiver.first_name
 
-        window.Telegram.WebApp.MainButton.onClick(changeWebPage)
+        window.Telegram.WebApp.MainButton.onClick(changeToNextWebPage)
     </script>
     
 </body>
