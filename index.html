@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categories</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+        function setThemeClass() {
+          document.documentElement.className = Telegram.WebApp.colorScheme;
+        }
+        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+        setThemeClass();
+        window.Telegram.WebApp.ready();
+        window.Telegram.WebApp.MainButton.show();
+        
+    </script>
 </head>
 <body>
 
