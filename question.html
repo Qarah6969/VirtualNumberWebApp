@@ -8,56 +8,62 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: var(--tg-theme-secondary-bg-color);
+        height: var(--tg-viewport-stable-height);
+        transition: height .3s ease-in-out;
     }
 
     #questionPageContainer{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
         height: 100vh;
     }
 
     #questionBox {
-      background-color: #3498db;
+      background-color: var(--tg-theme-bg-color);
       display: flex;
       flex-direction: column;
-      color: #fff;
       margin: 2.5rem;
-      flex-basis:40%;
+      flex-basis:50%;
       border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     #questionText {
+        color: var(--tg-theme-text-color);
+        display: flex;
         text-align: center;
-    /* padding: 1rem; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: large;
-    flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+        flex-basis: 100%;
     }
 
     #bottomContainer {
-      display: grid;
-      /* justify-content: space-around; */
-      align-items: center;
-      grid-template-columns: repeat(2, 50%);
-      padding: 20px;
-    }
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr);   
+        gap: 1rem;
+        margin: 2.5rem;
+        height: 50vh; 
+}
 
-    .row {
-      /* display: flex;
-      justify-content: space-around; */
-      width: 100%;
-      margin-bottom: 20px;
-    }
+.answer {
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+  padding: 20px;
+  position: relative;
+  height: 60%;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    .column {
-      /* flex: 1; */
-      padding: 20px;
-      border: 1px solid #ddd;
-      text-align: center;
-    }
   </style>
 </head>
 <body>
@@ -67,14 +73,12 @@
   </div>
 
   <div id="bottomContainer">
-    <div class="row">
-      <div class="column">Row 1, Column 1</div>
-      <div class="column">Row 1, Column 2</div>
-    </div>
-    <div class="row">
-      <div class="column">Row 2, Column 1</div>
-      <div class="column">Row 2, Column 2</div>
-    </div>
+    
+      <div class="answer">Row 1, Column 2</div>
+      <div class="answer">Row 1, Column 1</div>
+    
+      <div class="answer">Row 2, Column 1</div>
+      <div class="answer">Row 2, Column 2</div>
   </div>
 </div>
 </body>
