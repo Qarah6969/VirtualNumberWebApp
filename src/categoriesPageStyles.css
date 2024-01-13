@@ -39,8 +39,6 @@ body{
     opacity: 0.1;
     transition: opacity 0.3s ease;
     position: absolute;
-    top: 50%;
-    left: 50%;
 }
 
 .categoryContainer:hover .categoryPic {
