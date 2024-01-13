@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #questionPageContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: 100vh;
+    }
+
+    #questionBox {
+      background-color: #3498db;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      margin: 2.5rem;
+      flex-basis:40%;
+      border-radius: 25px;
+    }
+
+    #questionText {
+        text-align: center;
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    flex-basis: 100%;
+    }
+
+    #bottomContainer {
+      display: grid;
+      /* justify-content: space-around; */
+      align-items: center;
+      grid-template-columns: repeat(2, 50%);
+      padding: 20px;
+    }
+
+    .row {
+      /* display: flex;
+      justify-content: space-around; */
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .column {
+      /* flex: 1; */
+      padding: 20px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <div id="questionPageContainer">
+  <div id="questionBox">
+    <span id="questionText">The Question</span>
+  </div>
+
+  <div id="bottomContainer">
+    <div class="row">
+      <div class="column">Row 1, Column 1</div>
+      <div class="column">Row 1, Column 2</div>
+    </div>
+    <div class="row">
+      <div class="column">Row 2, Column 1</div>
+      <div class="column">Row 2, Column 2</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
