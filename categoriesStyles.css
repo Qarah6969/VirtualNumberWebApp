@@ -1,66 +1,20 @@
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
     margin: 0;
-    
-}
-
-#mainPageContainer{
     background-color: var(--tg-theme-secondary-bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: var(--tg-viewport-stable-height);
-    margin: 0;
     transition: height .3s ease-in-out;
 }
 
-.contestants {
-    display: flex;
-    gap: 0.5rem;
-    width: 100%;
-    padding: 1rem;
-}
-
-.contestantOne,
-.contestantTwo {
-    background-color: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
-    flex: 1;
-    width: 50%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.avatar{
-    border-radius: 50%;
-}
-
-.contestantّFirstName{
-    color: var(--tg-theme-text-color);
-}
-
-.subtitleText{
-    color: var(--tg-theme-subtitle-text-color);
-    font-size: 0.75rem;
-}
-
-.headTitle{
-    text-align: center;
-}
 
 #categoriesContainer{
-    padding: 1rem;
     box-sizing: border-box;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0;
-    background-color: var(--tg-theme-secondary-bg-color);
 }
+
 
 .categoryContainer {
     display: flex;
@@ -80,6 +34,7 @@ body {
 
 .categoryPic{
     flex-basis: 25%;
+    border-radius: 15px;
 }
 
 .categoryName{
@@ -90,4 +45,9 @@ body {
     justify-content: center;
     flex-basis: 75%;
     font-size: large;
+}
+
+.headTitle{
+    text-align: center;
+        
 }
