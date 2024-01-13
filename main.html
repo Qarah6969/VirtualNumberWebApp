@@ -62,7 +62,7 @@
         contestantOneFirstNameElement.innerText = window.Telegram.WebApp.initDataUnsafe.user.first_name
         // contestantTwoFirstNameElement.innerText = window.Telegram.WebApp.initDataUnsafe.receiver.first_name
 
-        Telegram.WebApp.onEvent("mainButtonClicked", changeWebPage)
+        window.Telegram.WebApp.MainButton.onClick(changeWebPage)
     </script>
     
 </body>
