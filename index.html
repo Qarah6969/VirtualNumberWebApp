@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" style="margin: 0; height: 100%;">
 <head>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- <script src="https://telegram.org/js/telegram-web-app.js"></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -12,7 +12,7 @@
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
         window.Telegram.WebApp.ready();
-        // window.Telegram.WebApp.MainButton.show()
+        window.Telegram.WebApp.MainButton.show()
     </script>
     <link rel="stylesheet" href="styles.css">
 </head>

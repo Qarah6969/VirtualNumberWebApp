@@ -1,14 +1,20 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     background-color: var(--tg-theme-secondary-bg-color);
     height: var(--tg-viewport-stable-height);
     transition: height .3s ease-in-out;
     
+}
+
+.mainPageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .contestants {
@@ -29,6 +35,7 @@ body {
     box-sizing: border-box;
     text-align: center;
     border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .avatar{
@@ -42,4 +49,46 @@ body {
 .subtitleText{
     color: var(--tg-theme-subtitle-text-color);
     font-size: 0.75rem;
+}
+
+.headTitle{
+    text-align: center;
+}
+
+.container{
+    padding: 1rem;
+    box-sizing: border-box;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.categoryContainer {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ddd;
+    padding: 20px;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.categoryContainer:active {
+    background-color: #ccc; /* Gray background for selected category */
+}
+
+.categoryPic{
+    flex-basis: 25%;
+}
+
+.categoryName{
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 75%;
+    font-size: large;
 }
