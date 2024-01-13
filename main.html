@@ -46,12 +46,10 @@
     </div>
 
     <script>
-        var iframe = document.getElementById("iframe")
-        var iframeWindow = iframe.contentWindow;
-        var iframeDocument = iframeWindow.document;
+
 
         function changeWebPage(){
-            iframeWindow.location.href = "./categories.html"
+            document.location.href = "./categories.html"
         }
         // var contestantOneAvatarElement = document.getElementById("avatarImageOne")
         // contestantOneAvatarElement.src = window.Telegram.WebApp.initDataUnsafe.user.photo_url
@@ -64,7 +62,7 @@
         contestantOneFirstNameElement.innerText = iframeWindow.Telegram.WebApp.initDataUnsafe.user.first_name
         // contestantTwoFirstNameElement.innerText = window.Telegram.WebApp.initDataUnsafe.receiver.first_name
 
-        Telegram.WebApp.onEvent("mainButtonClicked", eventHandler)
+        Telegram.WebApp.onEvent("mainButtonClicked", changeWebPage)
     </script>
     
 </body>
