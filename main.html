@@ -12,7 +12,7 @@
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
         window.Telegram.WebApp.ready();
-        window.Telegram.WebApp.MainButton.show()
+        
     </script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -46,21 +46,26 @@
     </div>
 
     <script>
+        var iframe = document.getElementById("iframe")
+        var iframeWindow = iframe.contentWindow;
+        var iframeDocument = iframeWindow.document;
+
         function changeWebPage(){
-            window.location.href = "./categories.html"
+            iframeWindow.location.href = "./categories.html"
         }
         // var contestantOneAvatarElement = document.getElementById("avatarImageOne")
         // contestantOneAvatarElement.src = window.Telegram.WebApp.initDataUnsafe.user.photo_url
 
         // var contestantTwoAvatarElement = document.getElementById("avatarImageTwo")
         // contestantTwoAvatarElement.src = window.Telegram.WebApp.initDataUnsafe.user.photo_url
-        var contestantOneFirstNameElement = document.getElementById("contestantOneFirstName")
+        var contestantOneFirstNameElement = iframeDocument.getElementById("contestantOneFirstName")
         // var contestantTwoFirstNameElement = document.getElementById("contestantTwoFirstName")
 
-        contestantOneFirstNameElement.innerText = window.Telegram.WebApp.initDataUnsafe.user.first_name
+        contestantOneFirstNameElement.innerText = iframeWindow.Telegram.WebApp.initDataUnsafe.user.first_name
         // contestantTwoFirstNameElement.innerText = window.Telegram.WebApp.initDataUnsafe.receiver.first_name
 
         Telegram.WebApp.onEvent("mainButtonClicked", eventHandler)
     </script>
+    
 </body>
 </html>
