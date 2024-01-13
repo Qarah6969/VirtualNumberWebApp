@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setThemeClass() {
+          document.documentElement.className = Telegram.WebApp.colorScheme;
+        }
+        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+        setThemeClass();
+        window.Telegram.WebApp.ready();
+        window.Telegram.WebApp.MainButton.show();
+        
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mainPageContainer">
+    <div class="contestants">
+
+        <div class="contestantOne">
+            <div>
+                <img class="avatar" id="avatarImageOne" src="https://placehold.co/60">
+            </div>
+            <div>
+                <span class="contestantّFirstName" id="contestantOneFirstName"></span>
+            </div>
+            <div>
+                <span class="subtitleText">User joined.</span>
+            </div>
+        </div>
+
+        <div class="contestantTwo">
+            <div>
+                <img class="avatar" id="avatarImageTwo" src="https://placehold.co/60">
+            </div>
+            <div>
+                <span class="contestantّFirstName" id="contestantTwoFirstName">Some Guy</span>
+            </div>
+            <div>
+                <span class="subtitleText">Waiting for user to join.</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <script>
+
+
+        function changeWebPage(){
+            window.location.href = "./categories.html"
+        }
+        // var contestantOneAvatarElement = document.getElementById("avatarImageOne")
+        // contestantOneAvatarElement.src = window.Telegram.WebApp.initDataUnsafe.user.photo_url
+
+        // var contestantTwoAvatarElement = document.getElementById("avatarImageTwo")
+        // contestantTwoAvatarElement.src = window.Telegram.WebApp.initDataUnsafe.user.photo_url
+        var contestantOneFirstNameElement = document.getElementById("contestantOneFirstName")
+        // var contestantTwoFirstNameElement = document.getElementById("contestantTwoFirstName")
+
+        contestantOneFirstNameElement.innerText = window.Telegram.WebApp.initDataUnsafe.user.first_name
+        // contestantTwoFirstNameElement.innerText = window.Telegram.WebApp.initDataUnsafe.receiver.first_name
+
+        window.Telegram.WebApp.MainButton.onClick(changeWebPage)
+    </script>
+    
+</body>
+</html>
