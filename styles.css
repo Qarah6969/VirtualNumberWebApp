@@ -3,7 +3,7 @@ body {
     height: 100vh;
     margin: 0;
     
-    height: var(--tg-viewport-stable-height);
+    
     transition: height .3s ease-in-out;
     
 }
@@ -13,9 +13,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: var(--tg-viewport-stable-height);
     margin: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .contestants {
@@ -62,6 +61,7 @@ body {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
+    height: var(--tg-viewport-stable-height);
 }
 
 .categoryContainer {
