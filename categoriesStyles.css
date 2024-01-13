@@ -49,15 +49,13 @@ body{
 }
 
 .categoryName{
+    display: inline-block;
     text-align: center;
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: large;
+    line-height: 100%;
+    vertical-align: middle;
 }
 
 .headTitle{
     text-align: center;
-
+    color: var(--tg-theme-text-color);
 }
