@@ -24,7 +24,6 @@ body {
 
   #questionText {
       color: var(--tg-theme-text-color);
-      display: flex;
       text-align: center;
       align-items: center;
       justify-content: center;
